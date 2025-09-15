@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChampionBharat - The Complete Athlete Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="ChampionBharat Logo">
+            <h1>ChampionBharat</h1>
+        </div>
+        <div class="header-controls">
+            <div class="theme-switcher">
+                ☀️
+                <label class="switch"><input type="checkbox" id="theme-toggle"><span class="slider round"></span></label>
+                🌙
+            </div>
+            <select id="language-switcher">
+                <option value="en">English</option>
+                <option value="hi">हिन्दी</option>
+                <option value="bn">বাংলা</option>
+                <option value="ta">தமிழ்</option>
+                <option value="te">తెలుగు</option>
+            </select>
+            <button class="hamburger-menu" id="hamburger-menu">
+                <span class="hamburger-bar"></span><span class="hamburger-bar"></span><span class="hamburger-bar"></span>
+            </button>
+        </div>
+        <nav id="main-nav">
+            <a href="#" class="nav-link active" data-target="dashboard">Dashboard</a>
+            <a href="#" class="nav-link" data-target="ai-analysis">AI Analysis</a>
+            <a href="#" class="nav-link" data-target="training-hub">Training Hub</a>
+            <a href="#" class="nav-link" data-target="sports-hub">Sports Hub</a>
+            <a href="#" class="nav-link" data-target="event-dashboard">Events</a>
+            <a href="#" class="nav-link" data-target="my-profile">My Profile</a>
+            <a href="#" class="nav-link" data-target="settings">Settings</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sports-hub" class="page">
+            <h2>Sports Hub</h2>
+            <div id="sports-grid" class="grid-container">
+                <!-- Sports will be loaded dynamically -->
+            </div>
+            <div id="sport-details-view" class="card large" style="display: none;">
+                <!-- Sport details will be shown here -->
+            </div>
+        </section>
+
+        <section id="dashboard" class="page active">
+            <h2>Dashboard</h2>
+            <div class="grid-container">
+                <div class="card hero-card">
+                    <h3>Ready to Train?</h3>
+                    <p>Start your journey by uploading a video for AI analysis or explore your training plan.</p>
+                    <button class="cta-button nav-button" data-target="ai-analysis">Start AI Analysis</button>
+                </div>
+                <div class="card"><h3>Gamification</h3><p>Your Rank: #3. New Weekly Sprint Challenge is live!</p></div>
+                <div class="card"><h3>Merchandise Store</h3><p>Get official ChampionBharat gear. T-shirts, gear, and more!</p><button class="small-btn">Shop Now</button></div>
+                <div class="card large"><h3>Social Feed Snippet</h3><div class="feed-post"><p><strong>Coach Priya:</strong> Great work this week, team! Remember to rest and recover.</p></div></div>
+            </div>
+        </section>
+
+        <section id="ai-analysis" class="page">
+            <h2>AI Analysis</h2>
+            <div id="upload-view">
+                <div class="card">
+                    <h3>Video Record / Upload</h3>
+                    <p>Get a complete AI-powered breakdown of your performance.</p>
+                    <input type="file" id="video-upload" accept="video/*">
+                    <button id="analyze-video-btn" class="cta-button">Analyze My Video</button>
+                </div>
+            </div>
+            <div id="loading-view" class="card" style="display: none;">
+                <h2>AI is Analyzing...</h2>
+                <p>This may take a moment...</p>
+                <div class="loader"></div>
+            </div>
+            <div id="results-view" style="display: none;">
+                 <h3>Your AI Analysis is Ready!</h3>
+                 <div class="grid-container">
+                    <div class="card"><h4>Score (National Benchmark)</h4><div id="benchmark-score" class="score-circle">85</div><p>Top 85th percentile.</p></div>
+                    <div class="card"><h4>Pose Detection</h4><p>✅ Excellent stability<br>⚠️ Back needs straightening</p></div>
+                    <div class="card"><h4>Risk & Cheat Detection</h4><p>❗ Moderate risk of knee injury<br>✅ No cheat movements detected</p></div>
+                    <div class="card"><h4>Talent Prediction</h4><p>High potential for <strong>Javelin Throw</strong>.</p></div>
+                    <div class="card large highlight-card"><h4>Scouting Alert!</h4><p>Your performance has been flagged for review by the <strong>Indian National Scouting Program</strong>.</p></div>
+                    <div class="card large"><h4>Leaderboard</h4><div class="tabs"><button class="tab-btn active">Nationwide</button><button class="tab-btn">Local</button></div><p>Your Rank: #3 (Nationwide)</p></div>
+                 </div>
+                 <button id="analyze-another-btn">Analyze Another Video</button>
+            </div>
+        </section>
+        
+        <section id="training-hub" class="page">
+            <h2>Training Hub</h2>
+            <div class="grid-container">
+                <div class="card"><h3>AI Assistant</h3><p>Your AI coach is ready.</p><div class="toggle-container"><span>Voice Coach</span><label class="switch"><input type="checkbox" checked></label></div></div>
+                <div class="card"><h3>Daily Task & Challenges</h3><p>Today's Task: 30-min cardio.</p></div>
+                <div class="card large">
+                    <h3>Video Library</h3>
+                    <div class="tabs"><button class="tab-btn active">Coaches' Tips</button><button class="tab-btn">Indian Sports</button><button class="tab-btn">Olympic Sports</button></div>
+                    <p>Showing videos for: Coaches' Tips</p>
+                </div>
+                <div class="card"><h3>AR Training</h3><p>Use your camera for real-time form correction.</p><button class="small-btn">Start AR Session</button></div>
+                <div class="card"><h3>1-to-1 Coaching</h3><p>Book a personal session with professional coaches.</p><button class="small-btn">Book a Session</button></div>
+            </div>
+        </section>
+        
+        <section id="event-dashboard" class="page">
+            <h2>Event Dashboard</h2>
+            <div class="grid-container">
+                <div class="card"><h3>Live Sports Streaming</h3><p>National Hockey Finals are LIVE!</p><button class="small-btn">Watch Now</button></div>
+                <div class="card"><h3>Upcoming Events</h3><p>State Athletics Meet - Oct 15, 2025</p><button class="small-btn">Book Tickets</button></div>
+                <div class="card"><h3>Scholarships & Sponsors</h3><p>New athletic scholarships are now open for applications.</p></div>
+                <div class="card large"><h3>Social Feed</h3><p>Connect with athletes, coaches, clubs, and government bodies.</p><div class="feed-post"><strong>Govt. Sports Authority:</strong> Registrations for Khelo India are now open!</div></div>
+            </div>
+        </section>
+
+        <section id="my-profile" class="page">
+            <h2>My Profile</h2>
+             <div class="profile-header card">
+                <img src="https://i.imgur.com/gEKsyp8.png" alt="Athlete Profile Photo">
+                <div><h3>Rohan Sharma</h3><p>Javelin Throw Athlete</p></div>
+            </div>
+            <div class="grid-container">
+                <div class="card"><h3>Progress Graph</h3><img src="https://i.imgur.com/4l34TJZ.png" alt="Progress Graph"></div>
+                <div class="card"><h3>Athlete Stats & Analytics</h3><p>Leaderboard Position: #3</p><p>Badges: 🏅 Sprinter</p><p>Streak: 🔥 5 days</p></div>
+                <div class="card"><h3>Points & Rewards Store</h3><p>You have <strong>8900</strong> points.</p><button class="small-btn">Visit Store</button></div>
+            </div>
+        </section>
+
+        <section id="settings" class="page">
+            <h2>Settings</h2>
+            <div class="grid-container">
+                <div class="card"><h3>Language</h3><p>Your content is currently in English.</p></div>
+                <div class="card"><h3>Offline Sync</h3><label class="switch"><input type="checkbox" checked></label></div>
+                <div class="card"><h3>Device Integration</h3><p>Connected: Smart Watch ✅</p></div>
+                <div class="card">
+                    <h3>External Dashboards</h3>
+                    <button class="small-btn" id="coach-dashboard-btn">Coach Dashboard</button>
+                    <button class="small-btn" id="club-dashboard-btn">Club Dashboard</button>
+                    <button class="small-btn" id="govt-dashboard-btn">Govt. Dashboard</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

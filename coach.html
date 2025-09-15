@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coach Dashboard - ChampionBharat</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-theme="light">
+    <header>
+        <div class="logo">
+            <img src="https://i.imgur.com/8Y2Lqg8.png" alt="ChampionBharat Logo">
+            <h1>Coach Dashboard</h1>
+        </div>
+        <a href="index.html" class="logout-btn">Logout</a>
+    </header>
+    <main>
+        <h2>Welcome, Coach Priya!</h2>
+        <div class="grid-container">
+            <div class="card large">
+                <h3>My Athletes</h3>
+                <div id="athlete-list" class="athlete-grid">
+                    </div>
+            </div>
+            <div class="card large">
+                <h3>Upload New Training Video</h3>
+                <form id="upload-form" class="upload-form">
+                    <input type="text" id="video-title" placeholder="Video Title" required>
+                    <textarea id="video-desc" placeholder="Video Description" rows="4" required></textarea>
+                    <select id="video-sport" required>
+                        <option value="">Select Sport</option>
+                        <option value="athletics">Athletics</option>
+                        <option value="kabaddi">Kabaddi</option>
+                        <option value="hockey">Hockey</option>
+                    </select>
+                    <button type="submit" class="cta-button">Upload Video</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="coach.js"></script>
+</body>
+</html>
