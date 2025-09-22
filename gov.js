@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Mock data for the government dashboard
     const mockAthletes = [
-        { id: 'CB12345', name: 'Rohan Sharma', sport: 'Javelin Throw', score: 85, risk: 'Low', status: 'Flagged for Review' },
-        { id: 'CB67890', name: 'Priya Patel', sport: '100m Sprint', score: 92, risk: 'Low', status: 'Top Performer' },
-        { id: 'CB11223', name: 'Aarav Mehta', sport: 'Archery', score: 88, risk: 'Medium', status: 'Monitored' },
+        { id: 'CB12345', name: 'Neeraj Chopra', sport: 'Javelin Throw', score: 85, risk: 'Low', status: 'Flagged for Review' },
+        { id: 'CB67890', name: 'Hima Das', sport: '200m Sprint', score: 92, risk: 'Low', status: 'Top Performer' },
+        { id: 'CB11223', name: 'Dipa Karmakar', sport: 'Gymnastic', score: 88, risk: 'Medium', status: 'Monitored' },
         { id: 'CB44556', name: 'Saanvi Gupta', sport: 'Swimming', score: 79, risk: 'Low', status: 'Active' },
         { id: 'CB77889', name: 'Vikram Singh', sport: 'Weightlifting', score: 95, risk: 'High', status: 'Injury Prone' }
     ];
