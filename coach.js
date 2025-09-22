@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Mock data for coach's athletes
     const myAthletes = [
-        { name: 'Rohan Sharma', photo: 'https://i.imgur.com/OZuBqmy.png' },
-        { name: 'Priya Patel', photo: 'https://i.imgur.com/gEKsyp8.png' },
+        { name: 'Dipa Karmakar', photo: 'dipa.png' },
+        { name: 'Hima Das', photo: 'hima.png' },
         { name: 'Neeraj Chopra', photo: 'niraj.jpg' }
     ];
 
