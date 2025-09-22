@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const myAthletes = [
         { name: 'Rohan Sharma', photo: 'https://i.imgur.com/OZuBqmy.png' },
         { name: 'Priya Patel', photo: 'https://i.imgur.com/gEKsyp8.png' },
-        { name: 'Aarav Mehta', photo: 'https://i.imgur.com/OZuBqmy.png' }
+        { name: 'Neeraj Chopra', photo: 'niraj.jpg' }
     ];
 
     const athleteList = document.getElementById('athlete-list');
